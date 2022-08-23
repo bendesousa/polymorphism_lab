@@ -21,8 +21,12 @@ public abstract class Drink {
     }
 
     public String requireId(){
-        if(alcoholic = true);
-        return "Can I see your ID?";
+        if(alcoholic == true){
+            return "Can I see your ID?";
+        } else  {
+            return "Enjoy your drink!";
+        }
+
     }
 
     public String offerStraw() {

@@ -22,9 +22,16 @@ public class WineTest {
     }
 
     @Test
-    public void willNotOfferStaw(){
+    public void willNotOfferStraw(){
         String expected = "Enjoy your drink!";
         String actual = wine.offerStraw();
+        assertEquals(expected, actual);
+    }
+
+    @Test
+    public void redOrWhiteTest(){
+        String expected = "Would you like red or white?";
+        String actual = wine.redOrWhite();
         assertEquals(expected, actual);
     }
 
