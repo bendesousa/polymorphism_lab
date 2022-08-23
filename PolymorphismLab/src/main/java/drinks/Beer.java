@@ -6,10 +6,10 @@ public class Beer extends Drink {
 
     public Beer(String name, boolean alcoholic, String type){
         super (name, alcoholic, type);
-        this.isFlat = isFlat();
+        this.isFlat = true;
     }
 
-    public boolean isFlat(){
+    public boolean getIsFlat(){
         return this.isFlat;
     }
 
@@ -18,7 +18,7 @@ public class Beer extends Drink {
     }
 
     public String offerReplacement() {
-        if (isFlat = true) {
+        if (isFlat == true) {
             return "Let me get you another.";
         } else {
             return "Enjoy your drink!";

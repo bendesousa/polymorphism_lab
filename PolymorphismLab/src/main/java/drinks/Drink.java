@@ -25,9 +25,11 @@ public abstract class Drink {
         return "Can I see your ID?";
     }
 
-    public String offerStraw(){
-        if(type == "tall");
-        return "Would you like a straw?";
+    public String offerStraw() {
+        if (type == "tall") {
+            return "Would you like a straw?";
+        } else {
+            return "Enjoy your drink!";
+        }
     }
-
 }
