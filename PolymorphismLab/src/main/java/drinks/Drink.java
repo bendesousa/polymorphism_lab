@@ -8,7 +8,7 @@ public abstract class Drink {
 
     public Drink (String name, boolean alcoholic, String type) {
         this.name = name;
-        this.alcoholic = true;
+        this.alcoholic = alcoholic;
         this.type = type;
     }
 
