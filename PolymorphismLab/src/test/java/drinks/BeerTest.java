@@ -34,4 +34,11 @@ public class BeerTest {
         String actual = beer.offerReplacement();
         assertEquals(expected, actual);
     }
+
+    @Test
+    public void shouldAddIce(){
+        String expected = "Should ice be added to the beer: false";
+        String actual = beer.chill(false);
+        assertEquals(expected, actual);
+    }
 }
