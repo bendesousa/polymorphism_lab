@@ -28,6 +28,10 @@ public class Beer extends Drink implements IChill {
     }
 
     public String chill (boolean chill){
-        return String.format("Should ice be added to the beer: %s", chill);
+        return String.format("Should ice be added to the beer: %s.", chill);
+    }
+
+    public String chill (boolean chill, String intrusiveThought){
+        return String.format("Should ice be added to the beer: %s. %s", chill, "But why shouldn't I?");
     }
 }

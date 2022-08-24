@@ -13,7 +13,7 @@ public class Juice extends Drink implements IChill {
     }
 
     public String chill (boolean chill){
-        return String.format("Should ice be added to the juice: %s", chill);
+        return String.format("Should ice be added to the juice: %s.", chill);
     }
 
 }

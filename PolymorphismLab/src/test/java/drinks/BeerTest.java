@@ -37,8 +37,15 @@ public class BeerTest {
 
     @Test
     public void shouldAddIce(){
-        String expected = "Should ice be added to the beer: false";
+        String expected = "Should ice be added to the beer: false.";
         String actual = beer.chill(false);
+        assertEquals(expected, actual);
+    }
+
+    @Test
+    public void haveIntrusiveThought(){
+        String expected = "Should ice be added to the beer: false. But why shouldn't I?";
+        String actual = beer.chill(false, " But why shouldn't I?");
         assertEquals(expected, actual);
     }
 }

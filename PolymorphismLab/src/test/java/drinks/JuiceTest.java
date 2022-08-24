@@ -37,7 +37,7 @@ public class JuiceTest {
 
     @Test
     public void shouldAddIce(){
-        String expected = "Should ice be added to the juice: true";
+        String expected = "Should ice be added to the juice: true.";
         String actual = juice.chill(true);
         assertEquals(expected, actual);
     }
