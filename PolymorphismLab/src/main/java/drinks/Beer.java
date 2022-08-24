@@ -1,6 +1,8 @@
 package drinks;
 
-public class Beer extends Drink {
+import interfaces.IChill;
+
+public class Beer extends Drink implements IChill {
 
     private boolean isFlat;
 
@@ -23,5 +25,9 @@ public class Beer extends Drink {
         } else {
             return "Enjoy your drink!";
         }
+    }
+
+    public String chill (boolean chill){
+        return String.format("Should ice be added to the beer: %s", chill);
     }
 }
